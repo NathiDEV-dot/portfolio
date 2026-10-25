@@ -5,3 +5,6 @@
 #wallpaper-toggle:hover,#wallpaper-toggle:focus-visible{border-color:white #808080 #808080 white}
 .desktop-icon{text-shadow:1px 1px 2px #000,0 0 3px #0009}
 @media(prefers-reduced-motion:reduce){#live-wallpaper canvas{transition:none}}
+.motion-fallback:before{content:'';position:absolute;inset:-4%;background:url('wallpaper/bliss.jpg') center/cover no-repeat;animation:bliss-drift 14s ease-in-out infinite alternate}
+.motion-fallback.motion-paused:before{animation-play-state:paused}
+@keyframes bliss-drift{from{transform:translateX(-2%) scale(1.03)}to{transform:translateX(2%) scale(1.03)}}
