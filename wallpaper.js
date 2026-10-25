@@ -21,10 +21,17 @@
     toggle.setAttribute('aria-label', paused ? 'Play live wallpaper' : 'Pause live wallpaper');
     toggle.title = toggle.getAttribute('aria-label');
     toggle.setAttribute('aria-pressed', String(!paused));
+    host.classList.toggle('motion-paused', paused);
   };
   updateButton();
   const gl = canvas.getContext('webgl', { alpha: false, antialias: false, depth: false, powerPreference: 'low-power' });
-  if (!gl) { toggle.hidden = true; return; }
+  function fallback() {
+    host.classList.add('motion-fallback');
+    canvas.hidden = true;
+    toggle.onclick = () => { paused = !paused; updateButton(); };
+    reduced.addEventListener('change', () => { paused = reduced.matches; updateButton(); });
+  }
+  if (!gl) { fallback(); return; }
   const vertex = `attribute vec2 position; varying vec2 uv;
     void main(){uv=position*.5+.5;gl_Position=vec4(position,0.,1.);}`;
   const fragment = `precision mediump float;
@@ -43,15 +50,15 @@
       float grass=1.-smoothstep(edge-.045,edge,p.y);
       vec2 q=p;
       // Cloud drift eases into the fixed horizon, keeping the hill silhouette stable.
-      q.x+=sky*(.026*sin(time*.035)+.006*sin(p.y*8.+time*.055));
-      q.y+=sky*.0035*sin(time*.06+p.x*5.);
+      q.x+=sky*(.065*sin(time*.18)+.012*sin(p.y*8.+time*.22));
+      q.y+=sky*.007*sin(time*.19+p.x*5.);
       // Tiny wind ripples grow toward the foreground.
       float wind=sin(p.x*110.+p.y*37.+time*1.7)*sin(p.y*85.-time*.8);
-      q.x+=grass*.0007*wind*(1.-p.y);
-      q.y+=grass*.00045*sin(p.x*130.+time*1.5);
+      q.x+=grass*.0014*wind*(1.-p.y);
+      q.y+=grass*.0009*sin(p.x*130.+time*1.5);
       vec3 color=texture2D(photo,clamp(q,vec2(.001),vec2(.999))).rgb;
-      float shadow=sin(p.x*6.-time*.045+p.y*3.)*.5+.5;
-      color*=1.-grass*.065*shadow*shadow;
+      float shadow=sin(p.x*6.-time*.22+p.y*3.)*.5+.5;
+      color*=1.-grass*.11*shadow*shadow;
       gl_FragColor=vec4(color,1.);
     }`;
   function shader(type, source) {
@@ -66,7 +73,7 @@
     gl.attachShader(program, shader(gl.FRAGMENT_SHADER, fragment));
     gl.linkProgram(program);
     if (!gl.getProgramParameter(program, gl.LINK_STATUS)) throw new Error('Wallpaper unavailable');
-  } catch { toggle.hidden = true; return; }
+  } catch { fallback(); return; }
   gl.useProgram(program);
   const buffer = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
   gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1,1,-1,-1,1,-1,1,1,-1,1,1]), gl.STATIC_DRAW);
@@ -96,7 +103,7 @@
   toggle.onclick=()=>{paused=!paused;last=0;updateButton();resume();};
   reduced.addEventListener('change',()=>{paused=reduced.matches;last=0;updateButton();resume();});
   document.addEventListener('visibilitychange',()=>{last=0;resume();});
-  canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();cancelAnimationFrame(frame);frame=0;canvas.style.opacity=0;toggle.hidden=true;});
+  canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();cancelAnimationFrame(frame);frame=0;canvas.style.opacity=0;fallback();});
   const image = new Image();
   image.onload=()=>{
     const texture=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,texture);
