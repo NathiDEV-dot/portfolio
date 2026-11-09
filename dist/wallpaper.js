@@ -11,12 +11,12 @@
   toggle.type = 'button';
   toggle.setAttribute('aria-label', 'Pause live wallpaper');
   toggle.title = 'Pause live wallpaper';
-  toggle.textContent = 'Ⅱ';
+  toggle.textContent = 'Pause';
   document.querySelector('.tray').prepend(toggle);
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   let paused = reduced.matches, ready = false, frame = 0, elapsed = 0, last = 0;
   const updateButton = () => {
-    toggle.textContent = paused ? '▶' : 'Ⅱ';
+    toggle.textContent = paused ? 'Play' : 'Pause';
     toggle.title = toggle.getAttribute('aria-label');
     toggle.setAttribute('aria-label', paused ? 'Play live wallpaper' : 'Pause live wallpaper');
     toggle.title = toggle.getAttribute('aria-label');
