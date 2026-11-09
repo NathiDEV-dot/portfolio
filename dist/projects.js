@@ -45,3 +45,6 @@ window.PORTFOLIO.projects = [
     url: 'https://d2d5b0j6iun0gv.cloudfront.net/', video: '', images: []
   }
 ];
+window.PORTFOLIO.projects[0].images = ['media/saelune-home.png', 'media/saelune-shop.png'];
+window.PORTFOLIO.projects[1].images = ['media/primary-home.png', 'media/primary-features.png'];
+window.PORTFOLIO.projects[2].images = ['media/blog-home.png'];
