@@ -1,0 +1,9 @@
+REACT / TYPESCRIPT
+==================
+
+React and TypeScript storefronts, administration interfaces and business applications. Next.js static exports are used in Primary Onboarding and the publishing platform.
+
+Applied in product browsing, client workflows, invoice interfaces and content management.
+
+Explore my code: https://github.com/NathiDEV-dot
+Portfolio: https://nathidev-dot.github.io/portfolio/

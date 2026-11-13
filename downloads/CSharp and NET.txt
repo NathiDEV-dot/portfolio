@@ -1,0 +1,9 @@
+C# / .NET
+=========
+
+ASP.NET Core APIs and backend platforms on .NET 10.
+
+Applied in Iaac Commerce, Primary Onboarding, the blog/CMS and PGLN.Auth. Work includes authentication, business workflows, validation and background processing.
+
+Explore my code: https://github.com/NathiDEV-dot
+Portfolio: https://nathidev-dot.github.io/portfolio/

@@ -1,0 +1,9 @@
+ARCHITECTURE / RELIABILITY
+==========================
+
+Clean Architecture separates business rules from infrastructure. Vertical slices organize capabilities; CQRS separates queries and commands.
+
+Project work includes atomic stock reservations, idempotency protections, refresh-token replay detection and transactional outbox/inbox patterns.
+
+Explore my code: https://github.com/NathiDEV-dot
+Portfolio: https://nathidev-dot.github.io/portfolio/

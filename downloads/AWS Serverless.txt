@@ -1,0 +1,9 @@
+AWS SERVERLESS
+==============
+
+Lambda and API Gateway for APIs; S3 and CloudFront for static sites and media; Cognito for identity; SES for email; SQS and EventBridge Scheduler for background and scheduled work.
+
+Infrastructure is defined with AWS CDK and TypeScript.
+
+Explore my code: https://github.com/NathiDEV-dot
+Portfolio: https://nathidev-dot.github.io/portfolio/

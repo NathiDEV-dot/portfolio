@@ -1,0 +1,9 @@
+TESTING / DELIVERY
+==================
+
+xUnit, integration tests, DynamoDB Local, architecture tests and CDK infrastructure assertions.
+
+GitHub Actions supports continuous integration. Git, Docker and Postman support development and delivery.
+
+Explore my code: https://github.com/NathiDEV-dot
+Portfolio: https://nathidev-dot.github.io/portfolio/

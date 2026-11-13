@@ -1,0 +1,9 @@
+APIS AND INTEGRATIONS
+=====================
+
+REST/JSON APIs and XML, Peach Payments hosted checkout, Bob Go delivery, Amazon Cognito, SES, SQS and Lambda.
+
+Experience comes from personal and client projects, including ecommerce checkout and scheduled transactional email.
+
+Explore my code: https://github.com/NathiDEV-dot
+Portfolio: https://nathidev-dot.github.io/portfolio/
