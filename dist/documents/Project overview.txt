@@ -1,0 +1,28 @@
+SELECTED PROJECTS
+=================
+
+IAAC COMMERCE / SAELUNE ACTIVE
+A reusable ecommerce platform with React/TypeScript storefront and admin apps, a .NET 10 serverless API and AWS CDK infrastructure.
+
+Work includes variant-based catalog browsing, profiles, carts, favourites and product administration. Checkout uses atomic stock reservations and idempotency protections, with Peach Payments hosted checkout and Bob Go delivery integration.
+
+Live: https://dnmpjdbyl3ja5.cloudfront.net/
+
+PRIMARY ONBOARDING
+A multi-tenant business operations platform for South African freelancers and small businesses. It brings customers, quotes, service agreements, invoices, payment records, receipts, expenses and reporting into one workflow.
+
+The static React/Next.js frontend is served through S3 and CloudFront. An ASP.NET Core API runs on Lambda behind API Gateway, with tenant- and branch-scoped DynamoDB access patterns. Cognito, SES, SQS and EventBridge Scheduler support authentication and email automation.
+
+Live: https://d3223h59o0v7yn.cloudfront.net/
+
+SERVERLESS BLOG & CUSTOM CMS
+A reusable publication platform with article drafting, editorial approval, scheduling, publishing, rich-text/Markdown authoring, media uploads and role-based access.
+
+The public site supports categories, search, SEO metadata, newsletters, branding and contact forms. CDK provisions separate AWS resources for client deployments.
+
+Live: https://d2d5b0j6iun0gv.cloudfront.net/
+
+PGLN.AUTH
+A reusable .NET 10 authentication platform using ASP.NET Core, EF Core and PostgreSQL. Features include email verification, JWT access tokens, refresh-token rotation with replay detection, password recovery, sessions and trusted devices.
+
+Repository: https://github.com/NuGetPackagesPGLN/PGLN.JwtAuth

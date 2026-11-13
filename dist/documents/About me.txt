@@ -1,0 +1,14 @@
+NKOSINATHI TSHABALALA
+Software Engineer | C# / .NET | AWS Serverless
+Pretoria, South Africa
+
+I build full-stack products, reusable backend platforms and event-driven systems. My work focuses on C#/.NET backend development and AWS serverless applications, supported by React and TypeScript frontends.
+
+My projects include an ecommerce platform for Saelune Active, a business operations platform for South African freelancers and small businesses, and a reusable blog and CMS platform.
+
+I use Clean Architecture, automated testing and infrastructure as code to keep systems understandable and repeatable.
+
+This desktop is a small collection of that work. My Projects opens the live websites; Media Player contains their screenshot walkthroughs; this folder contains my CV and background.
+
+GitHub: https://github.com/NathiDEV-dot
+Portfolio: https://nathidev-dot.github.io/portfolio/
