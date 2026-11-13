@@ -1,0 +1,7 @@
+const galleries=[
+[['saelune-home','Storefront identity','The public homepage introduces the brand and collection.'],['saelune-filters','Catalog search and filtering','Collection, price, size, colour and stock controls, with seeded demo merchandise.'],['saelune-product','Variants and inventory','Product imagery, colour and size choices, stock availability and purchase controls.'],['saelune-shop','The collection','Demo products presented with imagery and pricing.']],
+[['primary-home','Business operations overview','The landing page introduces the product and its audience.'],['primary-setup','Business setup','Public product preview: business identity, contact details and invoice defaults.'],['primary-customers','Customers and services','Public product preview: customer records and reusable charges in a single workflow.'],['primary-quotes','Quote approval','Public product preview: line items, totals and a document preview before sending.']],
+[['blog-home','Publication identity','The branded homepage introduces the journal.'],['blog-discovery','Story discovery','Article summaries alongside search, year and category filters.'],['blog-article','Article presentation','A clear title, author and introduction establish the reading experience.'],['blog-reading','Long-form reading','Headings, formatted content and the alternate dark theme.']]
+];
+P.projects.forEach((p,i)=>{p.gallery=galleries[i].map(([file,title,caption])=>({src:`media/${file}.webp`,thumb:`media/${file}-thumb.webp`,full:`media/${file}.png`,title,caption}));p.images=p.gallery.map(s=>s.src);});
+

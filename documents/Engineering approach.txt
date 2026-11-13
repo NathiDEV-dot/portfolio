@@ -1,0 +1,22 @@
+HOW I APPROACH BACKEND WORK
+==========================
+
+START WITH THE WORKFLOW
+Identify the business operation, who may perform it and the data it needs. In Primary Onboarding, a customer record carries through quotes, agreements, invoices and payment tracking.
+
+MAKE BOUNDARIES EXPLICIT
+Clean Architecture separates domain rules and application use cases from AWS and database adapters. Vertical slices group code around capabilities; CQRS makes reads and writes explicit.
+
+DESIGN THE DATA ACCESS
+Model DynamoDB keys and indexes around concrete catalog, customer, inventory, order, tenant and branch queries. Keep authorization alongside the operation rather than trusting browser-side filtering.
+
+EXPECT RETRIES
+Checkout and background work need clear duplicate-handling rules. My projects use idempotency protections, atomic stock reservations, transactional outbox/inbox patterns and queued email processing where appropriate.
+
+KEEP DEPLOYMENTS REPEATABLE
+Use AWS CDK and TypeScript to declare infrastructure. Static sites and media are delivered through S3 and CloudFront; APIs and background processing use Lambda and managed AWS services.
+
+CHECK BUSINESS RULES AND INFRASTRUCTURE
+My project work includes xUnit tests, DynamoDB Local integration tests, architecture tests, CDK infrastructure assertions and GitHub Actions CI.
+
+These are approaches used across my projects; the exact architecture depends on the product and its requirements.

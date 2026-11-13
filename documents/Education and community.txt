@@ -1,0 +1,26 @@
+EDUCATION & COMMUNITY
+=====================
+
+BSc INFORMATION TECHNOLOGY
+Software Engineering
+Eduvos, Pretoria
+2022-2026
+
+Academic results listed in my CV:
+76% average
+18 distinctions
+
+EDUDEV CODING CLUB
+Co-founder
+
+Co-founded a student coding club, organized weekly programming challenges and participated in peer code reviews.
+
+PROJECT-BASED EXPERIENCE
+My hands-on integration work includes REST/JSON APIs, XML, Amazon SQS, Lambda, SES, Cognito, Peach Payments and Bob Go, delivered through personal and client projects.
+
+OPEN-SOURCE LIBRARIES
+PGLN.Media: a modular .NET media library with file-signature validation, MIME/extension checks, upload limits, storage abstractions and Azure storage integration.
+
+SAValidation: South African phone-number validation and normalization, operator detection, landline area identification and structured validation results.
+
+See the CV in this folder for a concise overview of my skills and projects.
