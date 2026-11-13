@@ -1,0 +1,9 @@
+DATA AND PERSISTENCE
+====================
+
+DynamoDB tables and indexes designed around catalog, inventory, customer, order, tenant and branch access patterns.
+
+PGLN.Auth uses EF Core and PostgreSQL. Other data experience listed in my CV includes SQL Server.
+
+Explore my code: https://github.com/NathiDEV-dot
+Portfolio: https://nathidev-dot.github.io/portfolio/

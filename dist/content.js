@@ -3,18 +3,17 @@ window.PORTFOLIO = {
   "name": "Nkosinathi Tshabalala",
   "role": "Software Engineer | C# / .NET | AWS Serverless",
   "email": "",
-  "github": "",
+  "github": "https://github.com/NathiDEV-dot",
   "linkedin": "",
   "about": "I build full-stack products and reusable platforms with C#/.NET and AWS. Explore my projects, read a note, or open My Documents for my CV.",
   "skills": [
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "HTML & CSS",
-    "Node.js",
-    "Git & GitHub",
-    "Figma",
-    "Problem solving"
+    "C# / .NET",
+    "React / TypeScript",
+    "AWS Serverless",
+    "Data and persistence",
+    "Architecture / reliability",
+    "Testing / delivery",
+    "APIs and integrations"
   ],
   "projects": [
     {
@@ -89,5 +88,35 @@ window.PORTFOLIO = {
     }
   ],
   "photo": "media/nkosinathi-portrait-small.jpg",
-  "photoFull": "media/nkosinathi-portrait.png"
+  "photoFull": "media/nkosinathi-portrait.png",
+  "skillDetails": {
+    "C# / .NET": {
+      "text": "C# / .NET\n=========\n\nASP.NET Core APIs and backend platforms on .NET 10.\n\nApplied in Iaac Commerce, Primary Onboarding, the blog/CMS and PGLN.Auth. Work includes authentication, business workflows, validation and background processing.\n\nExplore my code: https://github.com/NathiDEV-dot\nPortfolio: https://nathidev-dot.github.io/portfolio/\n",
+      "url": "downloads/CSharp and NET.txt"
+    },
+    "React / TypeScript": {
+      "text": "REACT / TYPESCRIPT\n==================\n\nReact and TypeScript storefronts, administration interfaces and business applications. Next.js static exports are used in Primary Onboarding and the publishing platform.\n\nApplied in product browsing, client workflows, invoice interfaces and content management.\n\nExplore my code: https://github.com/NathiDEV-dot\nPortfolio: https://nathidev-dot.github.io/portfolio/\n",
+      "url": "downloads/React and TypeScript.txt"
+    },
+    "AWS Serverless": {
+      "text": "AWS SERVERLESS\n==============\n\nLambda and API Gateway for APIs; S3 and CloudFront for static sites and media; Cognito for identity; SES for email; SQS and EventBridge Scheduler for background and scheduled work.\n\nInfrastructure is defined with AWS CDK and TypeScript.\n\nExplore my code: https://github.com/NathiDEV-dot\nPortfolio: https://nathidev-dot.github.io/portfolio/\n",
+      "url": "downloads/AWS Serverless.txt"
+    },
+    "Data and persistence": {
+      "text": "DATA AND PERSISTENCE\n====================\n\nDynamoDB tables and indexes designed around catalog, inventory, customer, order, tenant and branch access patterns.\n\nPGLN.Auth uses EF Core and PostgreSQL. Other data experience listed in my CV includes SQL Server.\n\nExplore my code: https://github.com/NathiDEV-dot\nPortfolio: https://nathidev-dot.github.io/portfolio/\n",
+      "url": "downloads/Data and Persistence.txt"
+    },
+    "Architecture / reliability": {
+      "text": "ARCHITECTURE / RELIABILITY\n==========================\n\nClean Architecture separates business rules from infrastructure. Vertical slices organize capabilities; CQRS separates queries and commands.\n\nProject work includes atomic stock reservations, idempotency protections, refresh-token replay detection and transactional outbox/inbox patterns.\n\nExplore my code: https://github.com/NathiDEV-dot\nPortfolio: https://nathidev-dot.github.io/portfolio/\n",
+      "url": "downloads/Architecture and Reliability.txt"
+    },
+    "Testing / delivery": {
+      "text": "TESTING / DELIVERY\n==================\n\nxUnit, integration tests, DynamoDB Local, architecture tests and CDK infrastructure assertions.\n\nGitHub Actions supports continuous integration. Git, Docker and Postman support development and delivery.\n\nExplore my code: https://github.com/NathiDEV-dot\nPortfolio: https://nathidev-dot.github.io/portfolio/\n",
+      "url": "downloads/Testing and Delivery.txt"
+    },
+    "APIs and integrations": {
+      "text": "APIS AND INTEGRATIONS\n=====================\n\nREST/JSON APIs and XML, Peach Payments hosted checkout, Bob Go delivery, Amazon Cognito, SES, SQS and Lambda.\n\nExperience comes from personal and client projects, including ecommerce checkout and scheduled transactional email.\n\nExplore my code: https://github.com/NathiDEV-dot\nPortfolio: https://nathidev-dot.github.io/portfolio/\n",
+      "url": "downloads/Integrations.txt"
+    }
+  }
 };
